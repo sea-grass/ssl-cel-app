@@ -40,8 +40,8 @@ for (var i = 0; i < routes.length; i++) {
 var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
 
-httpServer.listen(3000, startApp);
-httpsServer.listen(443, startApp);
+httpServer.listen(8080, startApp);
+httpsServer.listen(8443, startApp);
 
 function getIndex(req, res) {
   var dom = Cel(myApp.cel.index);

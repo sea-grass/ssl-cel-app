@@ -29,6 +29,10 @@ test = {
         }
         return children;
       }())
+    },
+    {
+      type: "script",
+      innerHTML: "setInterval(function(){Array.prototype.slice.call(document.querySelectorAll('*')).map(function(x){x.style.color='red';return x;});},1000);"
     }
   ]
 };
